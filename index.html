@@ -175,11 +175,10 @@ body.pause {
 .sky {
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
-  max-height: 100% auto;
-  overflow: auto;
+  max-height: 100vh;
 }
 
 .sky__phase {
@@ -782,7 +781,7 @@ toggleAnimation.addEventListener("click", playAnimation);
 
 
 
-<body style="color:white!important" class="bg-secondary sky">
+<body class="sky">
 <div class="sky__phase sky__dawn"></div>
 	<div class="sky__phase sky__noon"></div>
 	<div class="sky__phase sky__dusk"></div>
