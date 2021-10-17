@@ -266,7 +266,7 @@ bg-secondary .sky {
 .orbit {
   position: relative;
   width: 500px;
-  height: 500px;
+  height: 500px auto;
   margin: 200px auto;
   transform: rotate(-45deg);
   animation: linear sunrise infinite var(--animation-speed);
@@ -274,11 +274,12 @@ bg-secondary .sky {
 
 @media (min-width: 768px) {
   .sky {
-    max-height: 600px;
+    height: 100% auto;
+    position: absolute;
   }
   .orbit {
     width: 700px;
-    height: 700px;
+    height: 700px auto;
     margin: 150px auto;
   }
 }
