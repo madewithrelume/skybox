@@ -175,11 +175,11 @@ body.pause {
 .sky {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  max-height: 600px;
-  overflow: hidden;
+  max-height: auto;
+  overflow: scroll;
 }
 
 .sky__phase {
@@ -782,13 +782,22 @@ toggleAnimation.addEventListener("click", playAnimation);
 
 
 
-<body style="color:white!important" class="sky">
+<body style="color:white!important" class="bg-secondary sky">
 <div class="sky__phase sky__dawn"></div>
 	<div class="sky__phase sky__noon"></div>
 	<div class="sky__phase sky__dusk"></div>
 	<div class="sky__phase sky__midnight">
 		<div id="sky__stars"></div>
 
+<div class="orbit">
+		<div class="sun"></div>
+		<div class="moon"></div>
+	</div>
+</div>
+<button id="toggle-animation">
+	<span class="playing">Pause</span>
+	<span class="paused">Play</span>
+</button>
 
 
 
