@@ -210,7 +210,7 @@ body.pause {
   --animation-speed: 0;
 }
 
-bg-secondary .sky {
+.bg-secondary.sky {
   width: 100vw;
   height: 100% auto;
   top: 0;
@@ -273,7 +273,7 @@ bg-secondary .sky {
 }
 
 @media (min-width: 768px) {
-  .sky {
+  .bg-secondary.sky {
     height: 100% auto;
     position: absolute;
   }
@@ -292,7 +292,7 @@ bg-secondary .sky {
 }
 
 @media (min-width: 1200px) {
-  body {
+  body.bg-secondary {
     --animation-speed: 28s;
   }
   .orbit {
@@ -303,12 +303,12 @@ bg-secondary .sky {
 }
 
 @media (min-width: 1500px) {
-  body {
+  body.bg-secondary {
     --animation-speed: 30s;
   }
   .orbit {
     width: 1300px;
-    height: 1300px;
+    height: 1300px auto;
   }
 }
 
