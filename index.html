@@ -172,13 +172,12 @@ body.pause {
   --animation-speed: 1s;
 }
 
-body .sky {
+.sky {
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   position: absolute;
-  overflow-x: none;
 }
 
 .sky__phase {
@@ -187,6 +186,7 @@ body .sky {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 1;
   transition: opacity 0.2s;
 }
 
