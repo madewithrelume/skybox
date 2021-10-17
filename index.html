@@ -165,11 +165,11 @@ data-wf-page="602ebdfe88e4cb515b29a0dc" data-wf-site=
 
 body {
   --animation-speed: 24s;
-  background-color: rgb(37, 29, 24);
+  background-color: none;
 }
 
 body.pause {
-  --animation-speed: 0;
+  --animation-speed: 1s;
 }
 
 body .sky {
@@ -177,8 +177,8 @@ body .sky {
   height: 100vh;
   top: 0;
   left: 0;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  overflow-x: none;
 }
 
 .sky__phase {
