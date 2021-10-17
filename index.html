@@ -172,7 +172,7 @@ body.pause {
   --animation-speed: 1s;
 }
 
-body.bg-secondary.sky {
+body.sky {
   width: 100% auto;
   height: 100% auto;
   top: 0;
@@ -180,15 +180,17 @@ body.bg-secondary.sky {
   left: 0;
   bottom: 0
   position: absolute;
+  z-index: inherit auto;
 }
 
-body.bg-secondary.sky__phase {
+body.sky__phase {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   transition: opacity 0.2s;
+  z-index: initial auto;
 }
 
 .sky__dawn {
@@ -782,7 +784,7 @@ toggleAnimation.addEventListener("click", playAnimation);
 
 
 
-<body class="bg-secondary sky">
+<body class="sky">
 <div class="sky__phase sky__dawn"></div>
 	<div class="sky__phase sky__noon"></div>
 	<div class="sky__phase sky__dusk"></div>
