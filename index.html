@@ -178,9 +178,8 @@ body.sky {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0
+  bottom: 0;
   position: absolute;
-  z-index: inherit auto;
 }
 
 body.sky__phase {
@@ -190,7 +189,6 @@ body.sky__phase {
   height: 100%;
   width: 100%;
   transition: opacity 0.2s;
-  z-index: initial auto;
 }
 
 .sky__dawn {
@@ -240,7 +238,7 @@ body.sky__phase {
 
 @media (min-width: 768px) {
   .sky {
-    min-height: 100vh;
+    min-height: 600px;
   }
   .orbit {
     width: 700px;
