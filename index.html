@@ -47,10 +47,49 @@ data-wf-page="602ebdfe88e4cb515b29a0dc" data-wf-site=
   <link href=
   "https://cdn.shopify.com/s/files/1/0064/4448/2650/files/Notebook_Logo.png"
   rel="apple-touch-icon">
-  <script type="text/javascript" src=
+  
+	
+	<script type="text/javascript" src=
   "https://vaultcdn.electricapps.net/lib/jquery-ui-min.js?shop=gnfld-zn.myshopify.com"
   async="async"></script>
-  <style>
+ 
+	<script type="text/javascript" async="async">
+
+const stars = 40;
+const skyStars = document.getElementById("sky__stars");
+const toggleAnimation = document.getElementById("toggle-animation");
+
+// Generate stars randomly using absolute position
+function createStars() {
+	for (let i = 0; i < stars; i++) {
+		let x = Math.floor(Math.random() * 100 + 1);
+		let y = Math.floor(Math.random() * 100 + 1);
+		const starPoint = document.createElement("div");
+		starPoint.style.left = `${x}%`;
+		starPoint.style.top = `${y}%`;
+		skyStars.appendChild(starPoint);
+	}
+}
+
+// Function to pause or play animation
+function playAnimation() {
+	if (document.body.classList.contains("pause")) {
+		document.body.classList.remove("pause");
+	} else {
+		document.body.classList.add("pause");
+	}
+}
+
+createStars();
+
+// butoon to pause/play animation
+toggleAnimation.addEventListener("click", playAnimation);
+
+
+</script>
+	
+	
+	<style>
   * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -334,40 +373,6 @@ body .sky {
 
 
 
-<script type="text/javascript">
-
-const stars = 40;
-const skyStars = document.getElementById("sky__stars");
-const toggleAnimation = document.getElementById("toggle-animation");
-
-// Generate stars randomly using absolute position
-function createStars() {
-	for (let i = 0; i < stars; i++) {
-		let x = Math.floor(Math.random() * 100 + 1);
-		let y = Math.floor(Math.random() * 100 + 1);
-		const starPoint = document.createElement("div");
-		starPoint.style.left = `${x}%`;
-		starPoint.style.top = `${y}%`;
-		skyStars.appendChild(starPoint);
-	}
-}
-
-// Function to pause or play animation
-function playAnimation() {
-	if (document.body.classList.contains("pause")) {
-		document.body.classList.remove("pause");
-	} else {
-		document.body.classList.add("pause");
-	}
-}
-
-createStars();
-
-// butoon to pause/play animation
-toggleAnimation.addEventListener("click", playAnimation);
-
-
-</script>
 
   <link href="https://cdn.ampproject.org/amp-story-player-v0.css"
   rel="stylesheet" type="text/css">
@@ -779,21 +784,7 @@ toggleAnimation.addEventListener("click", playAnimation);
 
 
 <body class="sky">
-<div class="sky__phase sky__dawn"></div>
-	<div class="sky__phase sky__noon"></div>
-	<div class="sky__phase sky__dusk"></div>
-	<div class="sky__phase sky__midnight">
-		<div id="sky__stars"></div>
 
-<div class="orbit">
-		<div class="sun"></div>
-		<div class="moon"></div>
-	</div>
-</div>
-<button id="toggle-animation">
-	<span class="playing">Pause</span>
-	<span class="paused">Play</span>
-</button>
 
 
 
@@ -818,9 +809,27 @@ toggleAnimation.addEventListener("click", playAnimation);
 
 <!-- BEGIN content_for_index -->
   <!-- END content_for_index -->
-  <script data-ad-client="ca-pub-5710858543203237" async src=
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <div class="section push-top">
+  <div class="sky__phase sky__dawn"></div>
+	<div class="sky__phase sky__noon"></div>
+	<div class="sky__phase sky__dusk"></div>
+	<div class="sky__phase sky__midnight">
+		<div id="sky__stars"></div>
+
+<div class="orbit">
+		<div class="sun"></div>
+		<div class="moon"></div>
+	</div>
+</div>
+<button id="toggle-animation">
+	<span class="playing">Pause</span>
+	<span class="paused">Play</span>
+</button>
+  
+
+	
+	
+	
+	<div class="section push-top">
     <div class="container">
       <div class="card-secondary">
         <div class="card-padding inline">
