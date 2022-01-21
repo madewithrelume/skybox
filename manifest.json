@@ -1,0 +1,74 @@
+{
+  "background_color": "#000000",
+  "description": "Pioneering The Next Generation Of Digital Experiences,
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "SKYBOX",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "SKYBOX",
+  "start_url": "https://skybox.life/",
+  "theme_color": "#ffffff",
+  "categories": ["music", "community"],
+  "screenshots": [
+    {
+      "src": "https://moonclub.co.za/MoonClub-Icon.png",
+      "sizes": "1280x800",
+      "type": "image/png"
+    },
+    {
+      "src": "https://moonclub.co.za/screenshot_2.png",
+      "sizes": "750x1334",
+      "type": "image/png"
+    }
+  ],
+  "icons": [
+ {
+  "src": "https://app.skybox.life/665638E5-0EB6-4FD8-91A7-09E40734298E.png",
+  "sizes": "144x144",
+  "type": "image/png",
+  "purpose": "maskable"
+},    
+
+{
+            "src": "https://app.skybox.life/665638E5-0EB6-4FD8-91A7-09E40734298E.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://app.skybox.life/665638E5-0EB6-4FD8-91A7-09E40734298E.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "https://app.skybox.life/665638E5-0EB6-4FD8-91A7-09E40734298E.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "https://app.skybox.life/665638E5-0EB6-4FD8-91A7-09E40734298E.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+  ],
+  "shortcuts": [
+{
+"name": "Volume 1",
+"description": "The Silver Lining",
+"src": "https://skybox.life/pages/volume-1"
+},
+
+{
+"name": "Volume 2",
+"description": "Air Born",
+"src": "https://skybox.life/pages/volume-2"
+},
+
+{
+"name": "Volume 3",
+"description": "Cloud Ten",
+"src": "https://skybox.life/pages/volume-3"
+}
+
+]
+}
